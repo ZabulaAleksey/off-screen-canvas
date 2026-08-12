@@ -1,13 +1,13 @@
-# OffScreenCanvas - local instructions
+# OffScreenCanvas — локальные инструкции
 
-Before working here, read `~/codex-workspace/AGENTS.md`.
+Перед началом работы прочитай `~/codex-workspace/AGENTS.md`.
 
-## Project context
+## Контекст проекта
 
-- This is a dependency-free browser demo built from `index.html`, `index.js`, and `worker.js`.
-- Keep the main-thread/worker message contract explicit and synchronized on both sides.
-- Preserve the OffscreenCanvas capability check and a clear unsupported-browser path.
-- Avoid adding a build system or framework unless the task requires it.
-- Verify changes in a browser, including worker startup, canvas transfer, rendering, and console errors.
+- Это браузерная демонстрация без зависимостей, состоящая из `index.html`, `index.js` и `worker.js`.
+- Поддерживай явный и согласованный с обеих сторон контракт сообщений между основным потоком и worker.
+- Сохраняй проверку поддержки OffscreenCanvas и понятный сценарий для неподдерживаемых браузеров.
+- Не добавляй систему сборки или фреймворк, если этого не требует задача.
+- Проверяй изменения в браузере: запуск worker, передачу canvas, отрисовку и ошибки консоли.
 
-Load only context relevant to the current change; do not preload the AI Dev Team rules tree, SPEC collection, or `LEARNING_LOG.md`.
+Загружай только контекст, относящийся к текущему изменению; не загружай заранее всё дерево правил AI Dev Team, коллекцию SPEC или `LEARNING_LOG.md`.
