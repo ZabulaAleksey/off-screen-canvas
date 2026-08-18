@@ -18,3 +18,18 @@
 4. Для продолжения проекта используй `docs/AI_PLAN.md`, затем компактный `docs/AI_STATUS.md`.
 
 Загружай только контекст текущего изменения; не загружай заранее всё дерево правил AI Dev Team, весь roadmap или `LEARNING_LOG.md`. Общие agents, Skills, hooks, MCP, config, Git workflow и quality practices наследуются из `~/codex-workspace` и локально не копируются.
+
+
+## Локальные правила тестирования
+
+### Тестовый контракт
+- Принятый тестовый контракт фиксируется как неизменяемый на этапе верификации.
+- Применять только для прогонки и отчета.
+
+### Unit / integration / component
+- На текущий момент автоматический test-runner не настроен.
+- Минимум пока: ручные smoke-проверки worker flow (main thread ↔ worker), затем внедрить unit → integration → component.
+
+### E2E
+- Авто E2E отсутствуют, ключевой end-to-end поток определяется после появления API/тестового стенда.
+- До этого: `BLOCKED_BY_BACKEND_OFFSCREEN_CANVAS`.
