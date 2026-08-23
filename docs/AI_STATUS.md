@@ -1,5 +1,11 @@
 # Статус OffScreenCanvas
 
+## Governance migration — 2026-08-24
+
+- Добавлены канонический project overlay и `prompts/STAGES.md`; validator — PASS.
+- Продуктовый код не изменялся. Автоматический runner отсутствует; browser worker smoke в этом документальном этапе — `UNVERIFIED`.
+- Репозиторий находится в `~/codex-workspace/off-screen-canvas`; push/merge не выполнялись.
+
 Обновлено: 2026-08-13
 Текущий этап: КАРКАС подключён; надёжный контракт worker запланирован
 
