@@ -29,7 +29,7 @@
 
 ### Решение
 
-Хранить в repository только тонкий project overlay. Общие agents, Skills, hooks, MCP, config, Git workflow и review practices наследовать из `~/codex-workspace`.
+Хранить в repository только тонкий project overlay. Общие agents, Skills, hooks, MCP, config, Git workflow и review practices наследовать из `~/.codex`.
 
 ### Последствия
 
