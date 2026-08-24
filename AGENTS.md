@@ -1,6 +1,6 @@
 # OffScreenCanvas — локальные инструкции
 
-Перед началом работы прочитай `~/codex-workspace/AGENTS.md`.
+Перед началом работы прочитай `~/.codex/AGENTS.md`.
 
 ## Контекст проекта
 
@@ -17,7 +17,7 @@
 3. Для UI-изменений дополнительно прочитай `docs/DESIGN.md`.
 4. Для продолжения проекта используй `docs/AI_PLAN.md`, затем компактный `docs/AI_STATUS.md`.
 
-Загружай только контекст текущего изменения; не загружай заранее всё дерево правил AI Dev Team, весь roadmap или `LEARNING_LOG.md`. Общие agents, Skills, hooks, MCP, config, Git workflow и quality practices наследуются из `~/codex-workspace` и локально не копируются.
+Загружай только контекст текущего изменения; не загружай заранее всё дерево правил AI Dev Team, весь roadmap или `LEARNING_LOG.md`. Общие agents, Skills, hooks, MCP, config, Git workflow и quality practices наследуются из `~/.codex` и локально не копируются.
 
 
 ## Локальные правила тестирования
