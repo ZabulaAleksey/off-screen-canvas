@@ -44,14 +44,11 @@
 
 ### Действие пользователя по миграции state owner
 
-- `USER-OSC-STAGES-INTEGRATION` — `PENDING`, condition: isolated
-  `feature/docs-stages-canonical` commit/push и canonical selector read-back
-  готовы. Безопасное действие: разрешить merge этой точной ветки в `main`
-  после review сохранённых AI-фактов и unchanged product code/SPEC.
-  Ожидаемое evidence: clean main ancestry, GitHub default branch содержит
-  `docs/STAGES.md`, старые `prompts/STAGES.md`, `docs/AI_PLAN.md` и
-  `docs/AI_STATUS.md` отсутствуют, adapter PASS с `partial` и указанным NEXT.
-  Это разблокирует единственный execution-state owner для Stage 1.
+- `USER-OSC-STAGES-INTEGRATION` — `DONE`: пользователь разрешил merge
+  `feature/docs-stages-canonical`; `main` fast-forward до `9056929` и
+  опубликован. GitHub read-back подтвердил только `docs/STAGES.md` из четырёх
+  state paths. Selector `OSC-WORKER-CONTRACT`, `partial` и NEXT проходят
+  canonical adapter. Следующий срез — `OSC-WORKER-CONTRACT-IMPLEMENT`.
 
 ## OSC-CONTROLLED-DEMO — Этап 2: Управляемая демонстрация
 
