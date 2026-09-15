@@ -19,3 +19,20 @@
 ## Итог
 
 Пилот хранит только project-specific контекст. Дубли глобальных agents, Skills, hooks, MCP, config и Git workflow не обнаружены и не добавлены.
+
+## STAGES location migration — 2026-09-15
+
+Read-only `reconcile_project_framework.py` подтвердил brownfield baseline:
+`prompts/STAGES.md`, `docs/AI_PLAN.md`, `docs/AI_STATUS.md` — `MERGE`;
+`index.html`, `index.js`, `worker.js`, `specs/system.spec.md`,
+`docs/project-context.md` и `docs/LEARNING_LOG.md` сохранены без mutation.
+
+| Состояние | Legacy conflict | Разрешение | Classification |
+| --- | --- | --- | --- |
+| Current stage | Stage catalog без selector; AI pair называет worker reliability | Code/SPEC/ROADMAP подтверждают незакрытый Stage 1 | `ADAPT`: `OSC-WORKER-CONTRACT`, `partial` |
+| Stage 2 | Старый STAGES относит errors к Stage 2, ROADMAP — к Stage 1 | Reliability/errors входят в Stage 1, controlled demo остаётся future scope | `ADAPT` по ADR-003 |
+| NEXT/evidence | AI_PLAN перечисляет FR/AC и остановку по `MessageChannel`; AI_STATUS хранит ограничения и past governance | В selected STAGES record — NEXT и blockers; historical facts сохранены с source hashes в `docs/notes` | `MERGE` разрешён |
+
+Формальный DEV bridge не добавлялся: требование расположения файла исходит
+из прямого указания пользователя. Browser verification и terminal status
+не повышались из статического code review.

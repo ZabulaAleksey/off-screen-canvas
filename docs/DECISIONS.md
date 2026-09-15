@@ -34,3 +34,16 @@
 ### Последствия
 
 Локальные automation-возможности не создаются. Если появится подтверждённый проектный пробел, он сначала классифицируется в `docs/CONTEXT_COMPATIBILITY.md`.
+
+## ADR-003 — Один execution-state owner в `docs/STAGES.md`
+
+- Статус: Принято после read-only reconciliation 2026-09-15.
+
+Старый stage catalog и AI pair не задавали один selector/status/NEXT.
+`specs/system.spec.md`, `docs/ROADMAP.md`, `index.js` и `worker.js`
+подтверждают текущий Stage 1 `OSC-WORKER-CONTRACT`, status `partial`.
+Обработка worker/context errors из старого Stage 2 входит в Stage 1:
+она является частью текущего reliability contract, а не prerequisite
+будущего controlled demo. Текущий state владеет только `docs/STAGES.md`;
+unique исторические факты AI pair сохранены в
+`docs/notes/legacy-ai-state-evidence.md`.

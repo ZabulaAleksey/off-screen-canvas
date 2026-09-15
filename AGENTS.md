@@ -15,7 +15,9 @@
 1. Для изменения поведения прочитай `specs/system.spec.md` и относящиеся критерии приёмки.
 2. Для границ main thread/worker прочитай `docs/ARCHITECTURE.md` и `docs/DECISIONS.md`.
 3. Для UI-изменений дополнительно прочитай `docs/DESIGN.md`.
-4. Для продолжения проекта используй `docs/AI_PLAN.md`, затем компактный `docs/AI_STATUS.md`.
+4. Для продолжения проекта загрузи только выбранный record из `docs/STAGES.md`;
+   historical AI source snapshot в `docs/notes/legacy-ai-state-evidence.md`
+   не владеет current status/NEXT.
 
 Загружай только контекст текущего изменения; не загружай заранее всё дерево правил AI Dev Team, весь roadmap или `LEARNING_LOG.md`. Общие agents, Skills, hooks, MCP, config, Git workflow и quality practices наследуются из `~/.codex` и локально не копируются.
 
